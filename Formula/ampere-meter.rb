@@ -1,4 +1,4 @@
-class Ampere-Meter < Formula
+class AmpereMeter < Formula
   desc "CLI tool to track github organization metrics"
   homepage "https://github.com/jeffbrennan/ampere"
   url "https://github.com/jeffbrennan/ampere/releases/download/0.1.2/ampere_meter-0.1.2.tar.gz"
