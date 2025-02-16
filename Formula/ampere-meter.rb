@@ -7,7 +7,7 @@ class AmpereMeter < Formula
   depends_on "python@3.11"
 
   def install
-    bin.install "ampere-meter"
+    bin.install "ampere"
   end
 
   test do
