@@ -1,4 +1,6 @@
 class AmpereMeter < Formula
+  include Language::Python::Virtualenv
+
   desc "CLI tool to track github organization metrics"
   homepage "https://github.com/jeffbrennan/ampere"
   url "https://github.com/jeffbrennan/ampere/releases/download/0.1.2/ampere_meter-0.1.2.tar.gz"
@@ -7,7 +9,7 @@ class AmpereMeter < Formula
   depends_on "python@3.11"
 
   def install
-    bin.install "ampere_meter" => "ampere" 
+    virtualenv_install_with_resources
   end
 
   test do
